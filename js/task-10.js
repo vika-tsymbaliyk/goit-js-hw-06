@@ -15,9 +15,10 @@ function createBoxes() {
   console.log(amount);
  
   for (let i = 0; i < amount; i += 1){
-//     const newDiv = document.createElement('div');
-//     newDiv.style.height = "30px";
-//     newDiv.style.width = "30px";
+    const newDiv = document.createElement('div');
+    const divSize = i * 10 + 30;
+     newDiv.style.height = `${divSize}px`;
+     newDiv.style.width = `${divSize}px`;
 //     newDiv.style.backgroundColor = getRandomHexColor();
  }
 }
