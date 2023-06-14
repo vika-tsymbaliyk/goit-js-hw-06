@@ -24,9 +24,12 @@ function createBoxes() {
     dives.push(newDiv);
   }
   createArea.append(...dives);
+};
+
+function destroyBoxes() {
+
 }
 
 
-
 buttonCreate.addEventListener("click", createBoxes);
-
+buttonDestroy.addEventListener("click", destroyBoxes);
