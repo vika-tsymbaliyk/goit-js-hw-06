@@ -13,14 +13,20 @@ const createArea = document.querySelector('#boxes');
 function createBoxes() {
   const amount = controlInput.value;
   console.log(amount);
+  const dives = [];
  
   for (let i = 0; i < amount; i += 1){
     const newDiv = document.createElement('div');
     const divSize = i * 10 + 30;
      newDiv.style.height = `${divSize}px`;
      newDiv.style.width = `${divSize}px`;
-//     newDiv.style.backgroundColor = getRandomHexColor();
- }
+    newDiv.style.backgroundColor = getRandomHexColor();
+    dives.push(newDiv);
+  }
+  createArea.append(...dives);
 }
+
+
+
 buttonCreate.addEventListener("click", createBoxes);
 
