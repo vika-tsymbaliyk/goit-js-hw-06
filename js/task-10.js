@@ -27,7 +27,7 @@ function createBoxes() {
 };
 
 function destroyBoxes() {
-
+  createArea.innerHTML = "";
 }
 
 
